@@ -19,4 +19,18 @@ Great for giant (TB+) worlds. Offers no advantages for tiny worlds, it's just a 
 
 Your compiled .jar will be in `build/libs/`.
 
-Forked From LinearPaper.
+Forked From LinearPaper(https://github.com/xymb-endcrystalme/LinearPaper)
+
+中文(机翻)
+#NewLBLTC0re-LinearPaper使用了更多的错误修复和模块。
+线性区域文件格式使用了原始Anvil区域文件的大约一半，而没有任何数据丢失。
+检查[此存储库中的文档和工具](https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools).
+这个fork与Paper是100%兼容的，它只是在`.lineral`而不是`.mca`中读取和保存区域文件。
+非常适合巨大的（结核病+）世界。对于微小的世界没有任何优势，它只是一种区域文件格式。
+##编译
+```
+./gradlew苹果补丁
+./gradlew createReobfPaperclipJar
+```
+您已编译的.jar将位于“build/libs/”中。
+从LinearPaper分叉(https://github.com/xymb-endcrystalme/LinearPaper)
