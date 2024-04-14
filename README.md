@@ -1,4 +1,4 @@
-# LinearPaper - Paper that uses Linear region file format
+# NewLBLTC0re - LinearPaper that uses more bug fixes and modules. 
 
 Linear region file format uses about half of the original Anvil region file without any loss of data.
 
@@ -18,3 +18,5 @@ Great for giant (TB+) worlds. Offers no advantages for tiny worlds, it's just a 
 ```
 
 Your compiled .jar will be in `build/libs/`.
+
+Forked From LinearPaper.
