@@ -50,7 +50,7 @@ index 9f15d9dbdfa74a0640b1a2b4ff695609d4758a4c..a115fdca5d710beaa89a2cd74b7e4eae
      @DontObfuscate
      public String getServerModName() {
 -        return "Paper"; // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "NewLBLTCore"; // NewLBLTCore - NewLBLTCore // LinearPaper - LinearPaper > // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "NewLBLTCore (open source at github.com/Leleawa/NewLBLTC0re)"; // NewLBLTCore - NewLBLTCore // LinearPaper - LinearPaper > // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public SystemReport fillSystemReport(SystemReport details) {
@@ -63,7 +63,7 @@ index 0ba8446065def1b120fd73241de5bc14d60d3b82..62f83d36eceef196d7797c1761889b77
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Paper"; // Paper
-+    private final String serverName = "NewLBLTCore"; // NewLBLTCore // LinearPaper // Paper
++    private final String serverName = "NewLBLTCore (open source at github.com/Leleawa/NewLBLTC0re)"; // NewLBLTCore // LinearPaper // Paper
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
