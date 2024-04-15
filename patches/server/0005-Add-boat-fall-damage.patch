@@ -1,0 +1,28 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Lele awa <663154780@qq.com>
+Date: Fri, 15 Apr 2024 15:45:41 -0600
+Subject: [PATCH] Add boat fall damage
+
+
+diff --git a/src/main/java/net/minecraft/server/level/ServerPlayer.java b/src/main/java/net/minecraft/server/level/ServerPlayer.java
+index 581685e53fc9b63d291ba4904e47e8afc1119c9a..02078f459eb7230a5ac9b4499d961c8b37e5b196 100644
+--- a/src/main/java/net/minecraft/server/level/ServerPlayer.java
++++ b/src/main/java/net/minecraft/server/level/ServerPlayer.java
+@@ -1071,7 +1071,16 @@ public class ServerPlayer extends Player {
+         if (this.isInvulnerableTo(source)) {
+             return false;
+         } else {
+-            if (source.is(DamageTypeTags.IS_FALL) && getRootVehicle() instanceof net.minecraft.world.entity.vehicle.AbstractMinecart && level.purpurConfig.minecartControllable && !level.purpurConfig.minecartControllableFallDamage) return false; // NewLBLTC0re
++            // NewLBLTC0re
++            if (source.is(DamageTypeTags.IS_FALL)) { // NewLBLTC0re
++                if (getRootVehicle() instanceof net.minecraft.world.entity.vehicle.AbstractMinecart && level.purpurConfig.minecartControllable && !level.purpurConfig.minecartControllableFallDamage) {
++                    return false;
++                }
++                if (getRootVehicle() instanceof net.minecraft.world.entity.vehicle.Boat) {
++                    return true;
++                }
++            }
++            // NewLBLTC0re
+             boolean flag = this.server.isDedicatedServer() && this.isPvpAllowed() && source.is(DamageTypeTags.IS_FALL);
+ 
+             if (!flag && isSpawnInvulnerable() && !source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) { // NewLBLTC0re
