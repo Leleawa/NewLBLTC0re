@@ -28,7 +28,7 @@ index 9cf389defdaeb887e9cad4f0fed3f3b95667b238..2fb50b1ef8a77b9dac2b346ab2b50b1d
              "Main-Class" to "org.bukkit.craftbukkit.Main",
              "Implementation-Title" to "CraftBukkit",
 -            "Implementation-Version" to "git-Paper-$implementationVersion",
-+            "Implementation-Version" to "git-NewLBLTC0re-$implementationVersion", // NewLBltC0re
++            "Implementation-Version" to "git-LinearPaper-$implementationVersion", // LinearPaper
              "Implementation-Vendor" to date, // Paper
              "Specification-Title" to "Bukkit",
              "Specification-Version" to project.version,
@@ -73,7 +73,7 @@ index 774556a62eb240da42e84db4502e2ed43495be17..3365649adf2552af82bc0a57015a5d0a
 +++ b/src/main/java/org/bukkit/craftbukkit/util/Versioning.java
 @@ -11,7 +11,7 @@ public final class Versioning {
      public static String getBukkitVersion() {
-         String result = "Minecraft 1.19.4 build2";
+         String result = "Unknown-Version";
  
 -        InputStream stream = Bukkit.class.getClassLoader().getResourceAsStream("META-INF/maven/io.papermc.paper/paper-api/pom.properties");
 +        InputStream stream = Bukkit.class.getClassLoader().getResourceAsStream("META-INF/maven/me.endcrystal.linearpaper/linearpaper-api/pom.properties"); // LinearPaper
