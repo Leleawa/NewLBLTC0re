@@ -22,5 +22,5 @@ Your compiled .jar will be in `build/libs/`.
 Forked From LinearPaper(https://github.com/xymb-endcrystalme/LinearPaper)
 
 准备抄袭名单：
-LinearPurpur
 Purpur
+https://github.com/PurpurMC/Purpur/tree/ver/1.19.4
