@@ -1,26 +1,24 @@
-# NewLBLTC0re - LinearPaper that uses more bug fixes and modules. 
-Minecraft Version 1.19.4.
-Linear region file format uses about half of the original Anvil region file without any loss of data.
+# NewLBLTC0re - 是一个脑残服务端。 
+基于神秘的1.19.4
 
-Check [this repository for documentation and tools](https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools).
+线性区域文件格式使用了原始Anvil区域文件的大约一半，而没有任何数据丢失。
 
+检查[此存储库中的文档和工具](https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools).
 
+这个叉子与纸张是100%兼容的，它只是在`点线性`而不是`.铁砧`中读取和保存区域文件。
 
-This fork is 100% compatible with Paper, it just reads and saves region files in `.linear` instead of `.mca`.
+非常适合巨大的（结核病+）世界。对于微小的世界没有任何优势，它只是一种区域文件格式。
 
-Great for giant (TB+) worlds. Offers no advantages for tiny worlds, it's just a region file format.
-
-## Compiling
-
+## 太好笑了孩子们 我现在会用actions了望周知
+## 下面的我也不知道有什么用自己琢磨吧。。
 ```
 ./gradlew applyPatches
 ./gradlew createReobfPaperclipJar
 ```
 
-Your compiled .jar will be in `build/libs/`.
+您编译的.jar将在`build/libs/`.
 
-Forked From LinearPaper(https://github.com/xymb-endcrystalme/LinearPaper)
+叉子来自线性纸张(https://github.com/xymb-endcrystalme/LinearPaper)
 
-准备抄袭名单：
-Purpur
-https://github.com/PurpurMC/Purpur/tree/ver/1.19.4
+
+# 孩子们这一点都不好笑
